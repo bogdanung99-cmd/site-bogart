@@ -28,17 +28,31 @@
         /* Galerie Photos */
         .gallery { 
     padding: 60px 10px; 
-    background-color: #ffffff;
-    /* Aceasta linie adauga textura discreta de caroiaj/arhitect */
-    background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px), radial-gradient(#d1d1d1 0.5px, #ffffff 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    text-align: center;  }
-        .grid { 
+    background-color: #fdfdfd;
+    /* Aceasta textura imita finisajul unui perete */
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+    text-align: center; 
+}
             display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
             gap: 15px; max-width: 1400px; margin: 0 auto; 
         }
-        .grid a img { width: 100%; height: 350px; object-fit: cover; border-radius: 5px; transition: 0.3s; }
+        .grid a img { 
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 12px; /* Colturi mai rotunjite, arata mai modern */
+    transition: all 0.4s ease; 
+    /* Aceasta este umbra care scoate pozele in relief */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Efectul de miscare cand pui mouse-ul pe poza */
+.grid a img:hover { 
+    transform: translateY(-10px); /* Poza se ridica 10 pixeli */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
+    border-color: #d4af37; /* Apare o margine aurie ca logoul tau */
+}
 
         /* Sectiune Contact & Facebook Jos */
         .contact-footer { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
@@ -71,10 +85,10 @@
     <section class="gallery">
         <h2>GALERIE PHOTOS</h2>
         <div class="grid">
-            <a href="POZA1.jpg" data-lightbox="bogart"><img src="POZA1.jpg"></a>
-            <a href="POZA2.jpg" data-lightbox="bogart"><img src="POZA2.jpg"></a>
-            <a href="POZA3.jpg" data-lightbox="bogart"><img src="POZA3.jpg"></a>
-            <a href="POZA4.jpg" data-lightbox="bogart"><img src="POZA4.jpg"></a>
+            <a href="https://i.postimg.cc/fRwPZFvy/Picsart_25_06_19_06_58_05_518.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/fRwPZFvy/Picsart_25_06_19_06_58_05_518.jpg"></a>
+            <a href="https://i.postimg.cc/L8HWR7Vq/Picsart_25_06_19_19_15_31_700.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/L8HWR7Vq/Picsart_25_06_19_19_15_31_700.jpg"></a>
+            <a href="https://i.postimg.cc/Dw2NFDc7/Picsart_26_01_21_14_11_59_958.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/Dw2NFDc7/Picsart_26_01_21_14_11_59_958.jpg"></a>
+            <a href="https://i.postimg.cc/VvQ7hH6z/20240216_121416.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/VvQ7hH6z/20240216_121416.jpg"></a>
         </div>
     </section>
 
@@ -98,6 +112,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
 
