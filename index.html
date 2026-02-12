@@ -26,7 +26,14 @@
         .hero h1 { font-size: 3.5rem; margin: 0; border-bottom: 3px solid var(--gold); }
 
         /* Galerie Photos */
-        .gallery { padding: 60px 10px; background: #ffffff; text-align: center; }
+        .gallery { 
+    padding: 60px 10px; 
+    background-color: #ffffff;
+    /* Aceasta linie adauga textura discreta de caroiaj/arhitect */
+    background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px), radial-gradient(#d1d1d1 0.5px, #ffffff 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    text-align: center;  }
         .grid { 
             display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
             gap: 15px; max-width: 1400px; margin: 0 auto; 
@@ -91,6 +98,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
 
