@@ -66,6 +66,28 @@
             text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 25px;
         }
         footer { background: #000; color: #777; padding: 20px; text-align: center; font-size: 0.8rem; border-top: 1px solid #333; }
+   /* REPARATIE MOBIL - Pune-l chiar inainte de </style> */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Opreste miscarea stanga-dreapta */
+    }
+    .grid {
+        grid-template-columns: 1fr !important; /* Pune pozele una sub alta */
+        padding: 10px;
+    }
+    .grid a img {
+        height: auto !important; /* Pozele nu mai raman blocate la 350px inaltime */
+        width: 100%;
+    }
+    .contact-footer {
+        padding: 40px 10px;
+    }
+    .btn-large, .fb-button {
+        display: block !important;
+        width: 95% !important; /* Butoanele se fac late cat ecranul */
+        margin: 10px auto !important;
+    }
+}
     </style>
 </head>
 <body>
@@ -112,6 +134,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
 
