@@ -3,71 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOG-ART FRANCE | Rénovation & Construction de Prestige</title>
+    <title>BOG-ART | Rénovation de Prestige</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <style>
         :root { --gold: #d4af37; --dark: #1a1a1a; --white: #ffffff; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
         
+        /* Navigatie cu Logo */
+        nav { 
+            background: var(--dark); padding: 15px 30px; 
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo img { height: 50px; width: auto; } /* Aici va apărea poza BOG-ART */
+
         /* Hero Section */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.postimg.cc/K8ZWFV5Z/IMG_20221026_WA0043(1).jpg'); 
-            background-size: cover; background-position: center; height: 80vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('LINK_FOTO_FUNDAL'); 
+            background-size: cover; background-position: center; height: 70vh; 
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white);
         }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; border-bottom: 3px solid var(--gold); }
-        
-        /* Descriere Firma */
-        .about { padding: 60px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
-        .about h2 { color: var(--gold); text-transform: uppercase; }
-        .about p { font-size: 1.1rem; color: #555; }
 
-        /* Galerie Profesionala */
-        .gallery { padding: 40px 20px; background: #f9f9f9; text-align: center; }
+        /* Galerie Extinsa */
+        .gallery { padding: 60px 10px; background: #ffffff; text-align: center; }
         .grid { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 15px; max-width: 1200px; margin: 0 auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Poze mai mari */
+            gap: 10px; max-width: 1400px; margin: 0 auto; /* Spatiu mai mare pe ecran */
         }
         .grid a img { 
-            width: 100%; height: 250px; object-fit: cover; border-radius: 8px; 
-            transition: transform 0.3s; cursor: pointer;
+            width: 100%; height: 350px; object-fit: cover; border-radius: 4px; 
+            transition: 0.3s;
         }
-        .grid a img:hover { transform: scale(1.05); }
+        .grid a img:hover { filter: brightness(1.1); }
 
-        .btn-contact { 
-            background: var(--gold); color: var(--white); padding: 15px 30px; 
-            text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px;
-        }
+        .btn-contact { background: var(--gold); color: var(--white); padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
 
+    <nav>
+        <div class="logo">
+            <img src="https://i.postimg.cc/g2Y7d5K3/file_000000000554624681c4d1b636749f93_conversation_id_67fc0d74_31bc_800c_a3ff_fa58199efb19_message_i.png.jpg" alt="BOG-ART FRANCE">
+        </div>
+        <a href="tel:0751380200" class="btn-contact">CONTACT</a>
+    </nav>
+
     <section class="hero">
         <h1>BOG-ART FRANCE</h1>
-        <p>L'excellence dans la rénovation et la construction à Sainte-Maxime</p>
-        <a href="tel:NUMARUL_TAU" class="btn-contact">DEVIS GRATUIT</a>
-    </section>
-
-    <section class="about">
-        <h2>À Propos de BOG-ART</h2>
-        <p>
-            Forte d'une expertise reconnue dans le Var (83), <strong>BOG-ART </strong> est votre partenaire privilégié pour tous vos projets de construction de prestige et de rénovation haut de gamme. 
-            Basés à Sainte-Maxime, nous transformons vos espaces avec une attention méticuleuse portée aux finitions et au choix des matériaux. 
-            Que ce soit pour une villa moderne ou une rénovation traditionnelle, notre engagement reste le même : la qualité sans compromis.
-        </p>
+        <p>L'excellence dans la rénovation à Sainte-Maxime</p>
     </section>
 
     <section class="gallery">
-        <h2>NOS RÉALISATIONS</h2>
+        <h2>GALERIE PHOTOS</h2>
+        <p>Découvrez nos dernières réalisations de prestige</p>
         <div class="grid">
-            <a href="LINK_FOTO_1.jpg" data-lightbox="mygallery" data-title="Rénovation Villa"><img src="LINK_FOTO_1.jpg"></a>
-            <a href="LINK_FOTO_2.jpg" data-lightbox="mygallery" data-title="Piscine & Jardin"><img src="LINK_FOTO_2.jpg"></a>
-            <a href="LINK_FOTO_3.jpg" data-lightbox="mygallery" data-title="Gros Œuvre"><img src="LINK_FOTO_3.jpg"></a>
-            <a href="LINK_FOTO_4.jpg" data-lightbox="mygallery" data-title="Finitions Extérieures"><img src="LINK_FOTO_4.jpg"></a>
+            <a href="POZA1.jpg" data-lightbox="bogart"><img src="POZA1.jpg"></a>
+            <a href="POZA2.jpg" data-lightbox="bogart"><img src="POZA2.jpg"></a>
+            <a href="POZA3.jpg" data-lightbox="bogart"><img src="POZA3.jpg"></a>
+            <a href="POZA4.jpg" data-lightbox="bogart"><img src="POZA4.jpg"></a>
+            <a href="POZA5.jpg" data-lightbox="bogart"><img src="POZA5.jpg"></a>
+            <a href="POZA6.jpg" data-lightbox="bogart"><img src="POZA6.jpg"></a>
         </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
-
