@@ -79,15 +79,25 @@
 }
 
         /* Sectiune Contact & Facebook Jos */
-      contact-footer{
+      .contact-footer{
   padding: 60px 20px;
   text-align: center;
   color: white;
   position: relative;
 
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.35)),
-    linear-gradient(135deg, #3a3a3a, #2b2b2b);
+  background: url("beton.jpg") center / cover no-repeat;
+}
+
+.contact-footer::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* întunecă betonul */
+}
+
+.contact-footer > *{
+  position: relative;
+  z-index: 1;
 }
         .btn-large { 
             background: var(--gold); color: white; padding: 18px 35px; 
@@ -257,6 +267,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
 
