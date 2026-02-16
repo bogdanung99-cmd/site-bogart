@@ -1,274 +1,258 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOG-ART | Maçonnerie & Rénovation à Sainte-Maxime – Var (83)</title>
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/ht74BX49/logo_net.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <style>
-        :root { --gold: #d4af37; --dark: #1a1a1a; --white: #ffffff; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
-        
-        /* Navigatie cu Logo Mare */
-        nav { 
-            background: var(--dark); padding: 10px 30px; 
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .logo img { height: 120px; width: auto; }
-
-        /* Hero Section */
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.postimg.cc/3WMzhxxX/IMG_20230322_122332_1.jpg'); 
-            background-size: cover; background-position: center; height: 70vh; 
-            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white);
-        }
-       .hero h1 {
-   font-size: 3.5rem;
-   margin: 0;
-   border-bottom: 3px solid var(--gold);
-}
-
-/* PUI AICI CODUL BUTONULUI */
-
-.btn-devis{
-  background: linear-gradient(135deg, #d4af37, #b8962e);
-  color: #fff !important;
-  padding: 20px 50px;
-  border-radius: 12px;
-  font-weight: 800;
-  font-size: 20px;
-  text-decoration: none !important;
-  display: inline-block;
-  margin-top: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-}
-
-.btn-devis:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-        /* Galerie Photos */
-        .gallery { 
-    padding: 60px 10px; 
-    background-color: #fdfdfd;
-    /* Aceasta textura imita finisajul unui perete */
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
-    text-align: center; 
-}
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 15px; max-width: 1400px; margin: 0 auto; 
-        }
-        .grid a img { 
-    width: 100%; 
-    height: 350px; 
-    object-fit: cover; 
-    border-radius: 12px; /* Colturi mai rotunjite, arata mai modern */
-    transition: all 0.4s ease; 
-    /* Aceasta este umbra care scoate pozele in relief */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-/* Efectul de miscare cand pui mouse-ul pe poza */
-.grid a img:hover { 
-    transform: translateY(-10px); /* Poza se ridica 10 pixeli */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
-    border-color: #d4af37; /* Apare o margine aurie ca logoul tau */
-}
-
-        /* Sectiune Contact & Facebook Jos */
-        .contact-footer { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
-        .btn-large { 
-            background: var(--gold); color: white; padding: 18px 35px; 
-            text-decoration: none; border-radius: 5px; font-weight: bold; 
-            display: inline-block; margin: 15px; font-size: 1.1rem;
-        }
-        .fb-button {
-            display: inline-block; background: #1877F2; color: white; padding: 15px 30px;
-            text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 25px;
-        }
-        footer { background: #000; color: #777; padding: 20px; text-align: center; font-size: 0.8rem; border-top: 1px solid #333; }
-  
-@media (max-width: 768px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BOG-ART - Maçonnerie générale et rénovation à Sainte-Maxime. Construction, rénovation et piscines sur mesure.">
+  <title>BOG-ART | Maçonnerie générale & rénovation à Sainte-Maxime</title>
+  <style>
+    * {margin:0; padding:0; box-sizing: border-box;}
     body {
-        overflow-x: hidden; /* Opreste miscarea stanga-dreapta */
+      font-family: "Montserrat", sans-serif;
+      background-color: #000;
+      color: #f5f5f5;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
-    .grid {
-        grid-template-columns: 1fr !important; /* Pune pozele una sub alta */
-        padding: 10px;
+    header {
+      background: rgba(0,0,0,0.9);
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 1px solid #bfa14a;
     }
-    .grid a img {
-        height: auto !important; /* Pozele nu mai raman blocate la 350px inaltime */
-        width: 100%;
+    header img {
+      height: 50px;
     }
-    .contact-footer {
-        padding: 40px 10px;
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: color 0.3s;
     }
-    .btn-large, .fb-button {
-  display: block !important;
-  width: 100% !important;
-  margin: 12px 0 !important;
-  padding: 18px 20px !important;
-}
-    </style>
+    nav a:hover { color: #bfa14a; }
+
+    .hero {
+      height: 100vh;
+      background: url('images/hero.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {font-size: 2.8rem; color: #bfa14a;}
+    .hero p {font-size: 1.2rem; margin: 15px 0;}
+    .hero button {
+      background: #bfa14a;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #000;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .hero button:hover { transform: scale(1.05); }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h2 { color: #bfa14a; margin-bottom: 20px; text-transform: uppercase; text-align:center; }
+
+    .about {
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .service {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .service:hover { transform: translateY(-5px); border-color: #bfa14a; }
+    .service h3 { color: #bfa14a; margin-bottom: 10px; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover { transform: scale(1.02); }
+    .desc {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea, button {
+      margin: 10px 0; padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    input, textarea {
+      background: #222;
+      color: #fff;
+    }
+    button {
+      background: #bfa14a; color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover { opacity: 0.9; }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #bfa14a;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    footer a { color: #bfa14a; text-decoration: none; }
+
+    /* Lightbox */
+    #lightbox {
+      position: fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,0.9);
+      display:none;
+      justify-content:center;
+      align-items:center;
+      z-index: 1000;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 3px solid #bfa14a;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-
+  <header>
+    <img src="images/logo.png" alt="BOG-ART logo">
     <nav>
-        <div class="logo">
-            <img src="https://i.postimg.cc/g2Y7d5K3/file_000000000554624681c4d1b636749f93_conversation_id_67fc0d74_31bc_800c_a3ff_fa58199.jpg" alt="BOG-ART">
-        </div>
-        <a href="tel:0751380200" style="color:var(--gold); font-weight:bold; text-decoration:none; border: 1px solid var(--gold); padding: 10px; border-radius: 5px;">📞 07 51 38 02 00</a>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Réalisations</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <section class="hero">
-        <h1>BOG-ART</h1>
-       <p>Maçonnerie générale & Rénovation haut de gamme à Sainte-Maxime – Var (83)</p>
-    <a href="tel:0751380200"
-   style="background:#d4af37;
-          color:white;
-          padding:18px 40px;
-          border-radius:12px;
-          font-weight:800;
-          font-size:18px;
-          text-decoration:none;
-          display:inline-block;
-          margin-top:20px;
-          box-shadow:0 10px 30px rgba(0,0,0,0.3);">
-   📞 Demander un devis gratuit
-</a>
+  <section class="hero">
+    <h1>BOG‑ART</h1>
+    <p>Maçonnerie générale & rénovation à Sainte‑Maxime</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Demande de devis gratuit</button>
+  </section>
 
-  <p class="zone-var">
-    Intervention rapide dans tout le Var (83)
-  </p>
+  <section id="about" class="about">
+    <h2>À propos de nous</h2>
+    <p>Basée à Sainte‑Maxime, l’entreprise <strong>BOG‑ART</strong> réalise vos projets de construction, de rénovation et d'aménagement sur toute la Côte d’Azur. Nous mettons notre savoir‑faire et notre exigence de qualité au service de vos maisons, piscines et espaces extérieurs.</p>
+  </section>
 
-    </section>
-<!-- SECȚIUNE SEO -->
-<section style="padding:40px 20px; background:#f5f5f5; text-align:center;">
-  <h2>Maçonnerie & Rénovation dans le Var (83)</h2>
-  <p style="max-width:900px; margin:0 auto; line-height:1.7;">
-    Entreprise de maçonnerie basée à Sainte-Maxime, BOG-ART intervient dans tout le Var (83) :
-    Fréjus, Saint-Raphaël, Saint-Tropez, Draguignan et alentours.
-    Spécialisée en maçonnerie générale, rénovation complète de villas et travaux haut de gamme.
-    Devis gratuit et intervention rapide.
-  </p>
-</section>
-
-    <section class="gallery">
-     <section style="padding: 40px 20px; text-align: center;">
-    <div style="max-width: 900px; margin: 0 auto;">
-        <h2 style="color: #2c3e50; font-size: 2.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">
-            À Propos de BOG-ART
-        </h2>
-        
-        <div style="width: 60px; height: 3px; background-color: #d4af37; margin: 0 auto 30px;"></div> <p style="font-size: 1.2rem; line-height: 1.8; color: #444; margin-bottom: 20px; text-align: justify;">
-            Spécialisée dans le secteur de la <strong>construction et de la rénovation haut de gamme à Sainte-Maxime</strong>, l'entreprise <strong>BOG-ART</strong> incarne l'excellence technique et le savoir-faire artisanal. Nous transformons vos visions architecturales en réalités durables, en mettant un point d'honneur sur la précision des finitions et le respect des traditions locales de la Côte d'Azur.
-        </p>
-
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; text-align: justify;">
-            Qu'il s'agisse d'une rénovation complète de villa, de travaux de maçonnerie générale ou de projets de modernisation intérieure, notre équipe d'experts vous accompagne à chaque étape. Chez <strong>BOG-ART</strong>, nous ne construisons pas seulement des structures, nous bâtissons la confiance à travers la qualité et l'expertise.
-        </p>
-
-        <div style="margin-top: 40px;">
-            <span style="display: inline-block; padding: 10px 25px; border: 1px solid #d4af37; color: #d4af37; font-weight: bold; text-transform: uppercase;">
-                Expertise • Qualité • Engagement
-            </span>
-        </div>
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="services">
+      <div class="service"><h3>Maçonnerie générale</h3><p>Travaux de gros œuvre, extensions, structures béton et pierres.</p></div>
+      <div class="service"><h3>Rénovation complète</h3><p>Transformation intérieure et extérieure, modernisation des espaces.</p></div>
+      <div class="service"><h3>Piscines & terrasses</h3><p>Conception, création et rénovation de piscines sur mesure.</p></div>
+      <div class="service"><h3>Façades & finitions</h3><p>Ravalement, enduits, toitures et finitions haut de gamme.</p></div>
     </div>
-</section>
-<section style="padding: 40px 20px; background-color: #fff; text-align: center; font-family: Arial, sans-serif;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
-        
-        <div style="flex: 1; min-width: 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-            <div style="font-size: 30px; margin-bottom: 10px;">🏗️</div>
-            <h3 style="font-size: 1.1rem; color: #333;">Maçonnerie</h3>
-            <p style="font-size: 0.9rem; color: #666;">Gros œuvre et structures durables.</p>
-        </div>
+  </section>
 
-        <div style="flex: 1; min-width: 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-            <div style="font-size: 30px; margin-bottom: 10px;">🏠</div>
-            <h3 style="font-size: 1.1rem; color: #333;">Rénovation</h3>
-            <p style="font-size: 0.9rem; color: #666;">Transformation complète de villas.</p>
-        </div>
-
-        <div style="flex: 1; min-width: 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-            <div style="font-size: 30px; margin-bottom: 10px;">💧</div>
-            <h3 style="font-size: 1.1rem; color: #333;">Piscines</h3>
-            <p style="font-size: 0.9rem; color: #666;">Conception et pose de carrelage.</p>
-        </div>
-
-        <div style="flex: 1; min-width: 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-            <div style="font-size: 30px; margin-bottom: 10px;">✨</div>
-            <h3 style="font-size: 1.1rem; color: #333;">Finitions</h3>
-            <p style="font-size: 0.9rem; color: #666;">Enduits et décoration haut de gamme.</p>
-        </div>
-
+  <section id="gallery">
+    <h2>Réalisations</h2>
+    <div class="gallery">
+      <div>
+        <img src="images/villa1.jpg" alt="Rénovation intérieure">
+        <p class="desc">Rénovation complète d’une villa contemporaine à Sainte‑Maxime.</p>
+      </div>
+      <div>
+        <img src="images/piscine1.jpg" alt="Création piscine">
+        <p class="desc">Création d’une piscine à débordement avec vue sur la mer.</p>
+      </div>
+      <div>
+        <img src="images/toiture1.jpg" alt="Travaux toiture">
+        <p class="desc">Réfection de toiture traditionnelle en tuiles provençales.</p>
+      </div>
+      <div>
+        <img src="images/interieur1.jpg" alt="Aménagement intérieur">
+        <p class="desc">Aménagement intérieur haut de gamme — finitions et détails sur mesure.</p>
+      </div>
+      <div>
+        <img src="images/piscine2.jpg" alt="Rénovation piscine">
+        <p class="desc">Rénovation piscine existante — étanchéité, margelles, finitions pierre.</p>
+      </div>
+      <div>
+        <img src="images/chantier1.jpg" alt="Gros œuvre">
+        <p class="desc">Travaux de gros œuvre structure béton avec grue à Sainte‑Maxime.</p>
+      </div>
     </div>
-</section>
-        <h2>GALERIE PHOTOS</h2>
-        <div class="grid">
-            <a href="https://i.postimg.cc/fRwPZFvy/Picsart_25_06_19_06_58_05_518.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/fRwPZFvy/Picsart_25_06_19_06_58_05_518.jpg"></a>
-            <a href="https://i.postimg.cc/L8HWR7Vq/Picsart_25_06_19_19_15_31_700.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/L8HWR7Vq/Picsart_25_06_19_19_15_31_700.jpg"></a>
-            <a href="https://i.postimg.cc/Dw2NFDc7/Picsart_26_01_21_14_11_59_958.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/Dw2NFDc7/Picsart_26_01_21_14_11_59_958.jpg"></a>
-            <a href="https://i.postimg.cc/BvLS1Pss/FB_IMG_1770994506809.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/BvLS1Pss/FB_IMG_1770994506809.jpg"></a>
-            <a href="https://i.postimg.cc/d0ksTZvF/FB_IMG_1770994498601.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/d0ksTZvF/FB_IMG_1770994498601.jpg"></a>
-            <a href="https://i.postimg.cc/JhDrBHm1/Picsart_26_02_13_16_00_44_241.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/JhDrBHm1/Picsart_26_02_13_16_00_44_241.jpg"></a>
-            <a href="https://i.postimg.cc/yxVW96LC/Picsart_26_02_13_16_12_23_003.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/yxVW96LC/Picsart_26_02_13_16_12_23_003.jpg"></a>
-            <a href="https://i.postimg.cc/zXq8JPc6/Picsart_26_02_13_16_26_59_234.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/zXq8JPc6/Picsart_26_02_13_16_26_59_234.jpg"></a>
-        </div>
-    </section>
+  </section>
 
-    <section class="contact-footer">
-        <h2>VOTRE PROJET COMMENCE ICI</h2>
-        <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
-        
-     <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0; box-sizing: border-box;">
-    
-    <a href="tel:0751380200" style="width: 90%; max-width: 400px; background-color: #d4af37; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        APPELER MAINTENANT
-    </a>
+  <section id="contact" class="contact">
+    <h2>Demande de devis / Contact</h2>
+    <p>Vous avez un projet ? Contactez-nous dès aujourd’hui.</p>
+    <form action="mailto:contact@bog-art.fr" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="email" name="Email" placeholder="Votre email" required>
+      <textarea name="Message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </section>
 
-    <a href="mailto:bogdan.ung99@yahoo.com" style="width: 90%; max-width: 400px; background-color: transparent; border: 2px solid white; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        ENVOYER UN EMAIL
-    </a>
+  <footer>
+    <p>📍 Sainte‑Maxime (83120), France</p>
+    <p>📞 0751 380 200</p>
+    <p>✉️ <a href="mailto:contact@bog-art.fr">contact@bog-art.fr</a></p>
+    <p>👉 <a href="https://facebook.com/bogartmaconnerie" target="_blank">Suivez‑nous sur Facebook</a></p>
+    <p>© 2024 BOG‑ART. Tous droits réservés.</p>
+  </footer>
 
-    <a href="https://www.facebook.com/bogartmaconnerie/" target="_blank" style="width: 90%; max-width: 400px; background-color: #1877F2; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        REJOIGNEZ-NOUS SUR FACEBOOK
-    </a>
-
-</div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 BOG-ART | Sainte-Maxime, Var (83) | Garantie Décennale & Responsabilité Civile</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <div id="lightbox"><img src="" alt=""></div>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightImg = lightbox.querySelector('img');
+    document.querySelectorAll('.gallery img').forEach(img=>{
+      img.addEventListener('click', ()=>{
+        lightImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+    lightbox.addEventListener('click', ()=> lightbox.style.display = 'none');
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
