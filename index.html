@@ -182,6 +182,75 @@
 .btn-cta:hover {
   transform: translateY(-2px);
 }
+    /* ===== FORCE CTA (butoane + riflaj) ===== */
+
+/* zona CTA */
+.contact-footer.cta-panel{
+  position: relative;
+  background: #121212 !important;
+  padding: 60px 20px 120px !important; /* spațiu jos pt riflaj */
+  text-align: center;
+  overflow: hidden !important;
+}
+
+/* riflaj jos */
+.contact-footer.cta-panel::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height: 120px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.07) 0px,
+    rgba(255,255,255,0.07) 2px,
+    rgba(0,0,0,0.45) 2px,
+    rgba(0,0,0,0.45) 8px
+  );
+  opacity: 0.85;
+  pointer-events:none;
+}
+
+/* container butoane */
+.contact-footer.cta-panel .cta-buttons{
+  display:flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 360px;
+  margin: 22px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* buton (FORȚAT peste orice CSS vechi) */
+.contact-footer.cta-panel a.btn-cta{
+  display:block !important;
+  width:100% !important;
+  padding: 16px 18px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  border: 2px solid rgba(201,169,97,0.45) !important;
+  background: #1f1f1f !important;
+  color: #fff !important;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35) !important;
+}
+
+/* culori butoane */
+.contact-footer.cta-panel a.btn-cta.btn-yellow{
+  background: linear-gradient(135deg, #c9a961 0%, #a88a4d 100%) !important;
+  border-color: transparent !important;
+  color: #000 !important;
+}
+
+.contact-footer.cta-panel a.btn-cta.btn-blue{
+  background: #1877f2 !important;
+  border-color: transparent !important;
+  color:#fff !important;
+}
+
+/* hover
     </style>
 </head>
 <body>
@@ -317,6 +386,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
 
