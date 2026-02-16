@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOG-ART | Maçonnerie & Rénovation à Sainte-Maxime – Var (83)</title>
-    <link rel="icon" type="https://i.postimg.cc/RFTb5sc2/file_00000000aec0722f9af464e343e159ec.png">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/ht74BX49/logo_net.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <style>
         :root { --gold: #d4af37; --dark: #1a1a1a; --white: #ffffff; }
@@ -104,157 +104,13 @@
         width: 100%;
     }
     .contact-footer {
-        padding: 0 !important;
+        padding: 40px 10px;
     }
     .btn-large, .fb-button {
   display: block !important;
   width: 100% !important;
   margin: 12px 0 !important;
   padding: 18px 20px !important;
-}
-    /* CTA panel cu riflaj jos */
-.cta-panel {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  border: 2px solid rgba(201,169,97,0.25);
-  background: #121212;
-  padding: 40px 20px 80px;
-  margin: 60px auto;
-  max-width: 900px;
-  text-align: center;
-}
-
-/* Riflaj */
-.cta-panel::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 120px;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(255,255,255,0.05) 0px,
-    rgba(255,255,255,0.05) 10px,
-    rgba(0,0,0,0.3) 10px,
-    rgba(0,0,0,0.3) 20px
-  );
-  pointer-events: none;
-}
-
-/* Butoane verticale */
-.cta-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 350px;
-  margin: 20px auto 0;
-}
-
-.btn-cta {
-  display: block;
-  padding: 16px;
-  border-radius: 12px;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.3s;
-}
-
-.btn-yellow {
-  background: linear-gradient(135deg, #c9a961, #a88a4d);
-  color: black;
-}
-
-.btn-dark {
-  background: #1f1f1f;
-  color: white;
-  border: 2px solid #c9a961;
-}
-
-.btn-blue {
-  background: #1877f2;
-  color: white;
-}
-
-.btn-cta:hover {
-  transform: translateY(-2px);
-}
-    /* ===== FORCE CTA (butoane + riflaj) ===== */
-
-/* zona CTA */
-.contact-footer.cta-panel{
-  position: relative;
-  background: #121212 !important;
-  padding: 60px 20px 120px !important; /* spațiu jos pt riflaj */
-  text-align: center;
-  overflow: hidden !important;
-}
-
-/* riflaj jos */
-.contact-footer.cta-panel::after{
-  content:"";
-  position:absolute;
-  left:0; right:0; bottom:0;
-  height: 120px;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(255,255,255,0.07) 0px,
-    rgba(255,255,255,0.07) 2px,
-    rgba(0,0,0,0.45) 2px,
-    rgba(0,0,0,0.45) 8px
-  );
-  opacity: 0.85;
-  pointer-events:none;
-}
-
-/* container butoane */
-.contact-footer.cta-panel .cta-buttons{
-  display:flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 360px;
-  margin: 22px auto 0;
-  position: relative;
-  z-index: 2;
-}
-
-/* buton (FORȚAT peste orice CSS vechi) */
-.contact-footer.cta-panel a.btn-cta{
-  display:block !important;
-  width:100% !important;
-  padding: 16px 18px !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 800;
-  border: 2px solid rgba(201,169,97,0.45) !important;
-  background: #1f1f1f !important;
-  color: #fff !important;
-  box-shadow: 0 10px 26px rgba(0,0,0,0.35) !important;
-}
-
-/* culori butoane */
-.contact-footer.cta-panel a.btn-cta.btn-yellow{
-  background: linear-gradient(135deg, #c9a961 0%, #a88a4d 100%) !important;
-  border-color: transparent !important;
-  color: #000 !important;
-}
-
-.contact-footer.cta-panel a.btn-cta.btn-blue{
-  background: #1877f2 !important;
-  border-color: transparent !important;
-  color:#fff !important;
-}
-
-/* hover
-    /* TEST - trebuie să vezi un chenar roșu mare pe secțiunea CTA */
-.contact-footer.cta-panel{
-  outline: 6px solid red !important;
-  background: #ff00ff !important; /* roz țipător */
 }
     </style>
 </head>
@@ -363,26 +219,27 @@
             <a href="https://i.postimg.cc/zXq8JPc6/Picsart_26_02_13_16_26_59_234.jpg" data-lightbox="bogart"><img src="https://i.postimg.cc/zXq8JPc6/Picsart_26_02_13_16_26_59_234.jpg"></a>
         </div>
     </section>
-       <section class="contact-footer cta-panel">
 
-  <h2>VOTRE PROJET COMMENCE ICI</h2>
-  <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
-
-  <div class="cta-buttons">
-    <a href="tel:0751380200" class="btn-cta btn-yellow">
-      APPELER MAINTENANT
+    <section class="contact-footer">
+        <h2>VOTRE PROJET COMMENCE ICI</h2>
+        <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
+        
+     <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0; box-sizing: border-box;">
+    
+    <a href="tel:0751380200" style="width: 90%; max-width: 400px; background-color: #d4af37; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
+        APPELER MAINTENANT
     </a>
 
-    <a href="mailto:contact@bog-art.fr" class="btn-cta btn-dark">
-      ENVOYER UN EMAIL
+    <a href="mailto:bogdan.ung99@yahoo.com" style="width: 90%; max-width: 400px; background-color: transparent; border: 2px solid white; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
+        ENVOYER UN EMAIL
     </a>
 
-    <a href="https://www.facebook.com/bogartmaconnerie/" target="_blank" class="btn-cta btn-blue">
-      REJOIGNEZ-NOUS SUR FACEBOOK
+    <a href="https://www.facebook.com/bogartmaconnerie/" target="_blank" style="width: 90%; max-width: 400px; background-color: #1877F2; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
+        REJOIGNEZ-NOUS SUR FACEBOOK
     </a>
-  </div>
 
-</section>
+</div>
+    </section>
 
     <footer>
         <p>&copy; 2026 BOG-ART | Sainte-Maxime, Var (83) | Garantie Décennale & Responsabilité Civile</p>
@@ -391,6 +248,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
+
+
 
 
 
