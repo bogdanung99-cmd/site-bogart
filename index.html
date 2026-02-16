@@ -112,6 +112,76 @@
   margin: 12px 0 !important;
   padding: 18px 20px !important;
 }
+    /* CTA panel cu riflaj jos */
+.cta-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px solid rgba(201,169,97,0.25);
+  background: #121212;
+  padding: 40px 20px 80px;
+  margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Riflaj */
+.cta-panel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.05) 0px,
+    rgba(255,255,255,0.05) 10px,
+    rgba(0,0,0,0.3) 10px,
+    rgba(0,0,0,0.3) 20px
+  );
+  pointer-events: none;
+}
+
+/* Butoane verticale */
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 350px;
+  margin: 20px auto 0;
+}
+
+.btn-cta {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-yellow {
+  background: linear-gradient(135deg, #c9a961, #a88a4d);
+  color: black;
+}
+
+.btn-dark {
+  background: #1f1f1f;
+  color: white;
+  border: 2px solid #c9a961;
+}
+
+.btn-blue {
+  background: #1877f2;
+  color: white;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
@@ -221,25 +291,26 @@
     </section>
 
     <section class="contact-footer">
-        <h2>VOTRE PROJET COMMENCE ICI</h2>
-        <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
-        
-     <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0; box-sizing: border-box;">
-    
-    <a href="tel:0751380200" style="width: 90%; max-width: 400px; background-color: #d4af37; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        APPELER MAINTENANT
+       <section class="contact-footer cta-panel">
+
+  <h2>VOTRE PROJET COMMENCE ICI</h2>
+  <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
+
+  <div class="cta-buttons">
+    <a href="tel:0751380200" class="btn-cta btn-yellow">
+      APPELER MAINTENANT
     </a>
 
-    <a href="mailto:bogdan.ung99@yahoo.com" style="width: 90%; max-width: 400px; background-color: transparent; border: 2px solid white; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        ENVOYER UN EMAIL
+    <a href="mailto:bogdan.ung99@yahoo.com" class="btn-cta btn-dark">
+      ENVOYER UN EMAIL
     </a>
 
-    <a href="https://www.facebook.com/bogartmaconnerie/" target="_blank" style="width: 90%; max-width: 400px; background-color: #1877F2; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
-        REJOIGNEZ-NOUS SUR FACEBOOK
+    <a href="https://www.facebook.com/bogartmaconnerie/" target="_blank" class="btn-cta btn-blue">
+      REJOIGNEZ-NOUS SUR FACEBOOK
     </a>
+  </div>
 
-</div>
-    </section>
+</section>
 
     <footer>
         <p>&copy; 2026 BOG-ART | Sainte-Maxime, Var (83) | Garantie Décennale & Responsabilité Civile</p>
@@ -248,5 +319,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+
 
 
