@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
 
     <head>
     <!-- Google Tag Manager -->
@@ -18,6 +19,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'G-LRELG4PTGV');
 </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +31,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <style>
         :root { --gold: #d4af37; --dark: #1a1a1a; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
        body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #222;
 }
-        
+
         /* Navigatie cu Logo Mare */
         nav { 
             background: var(--dark); padding: 10px 30px; 
@@ -42,6 +46,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .logo img { height: 120px; width: auto; }
 
         /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.postimg.cc/3WMzhxxX/IMG_20230322_122332_1.jpg'); 
+            background-size: cover; background-position: center; height: 70vh; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white);
+        }
         background: url('https://i.postimg.cc/3NnZkxxX/IMG_20230822_123332_1.jpg');
     background-size: cover;
     background-position: center;
@@ -60,6 +69,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     overflow: hidden;
 }
        .hero h1 {
+   font-size: 3.5rem;
+   margin: 0;
+   border-bottom: 3px solid var(--gold);
     font-size: 4rem;
     margin: 0;
     letter-spacing: 6px;
@@ -84,6 +96,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 /* PUI AICI CODUL BUTONULUI */
 
 .btn-devis{
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #fff !important;
+  padding: 20px 50px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none !important;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
     background: rgba(0,0,0,0.25);
     color: #ffffff !important;
     padding: 16px 36px;
@@ -101,6 +124,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 .btn-devis:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     background: rgba(201,168,106,0.15);
     border-color: rgba(201,168,106,1);
     transform: translateY(-2px);
@@ -165,7 +190,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 25px;
         }
         footer { background: #000; color: #777; padding: 20px; text-align: center; font-size: 0.8rem; border-top: 1px solid #333; }
-  
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden; /* Opreste miscarea stanga-dreapta */
@@ -240,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 style="color: #2c3e50; font-size: 2.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">
             À Propos de BOG-ART
         </h2>
-        
+
         <div style="width: 60px; height: 3px; background-color: #d4af37; margin: 0 auto 30px;"></div> <p style="font-size: 1.2rem; line-height: 1.8; color: #444; margin-bottom: 20px; text-align: justify;">
             Spécialisée dans le secteur de la <strong>construction et de la rénovation haut de gamme à Sainte-Maxime</strong>, l'entreprise <strong>BOG-ART</strong> incarne l'excellence technique et le savoir-faire artisanal. Nous transformons vos visions architecturales en réalités durables, en mettant un point d'honneur sur la précision des finitions et le respect des traditions locales de la Côte d'Azur.
         </p>
@@ -258,7 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <section style="padding: 40px 20px; background-color: #fff; text-align: center; font-family: Arial, sans-serif;">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
-        
+
         <div style="flex: 1; min-width: 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
             <div style="font-size: 30px; margin-bottom: 10px;">🏗️</div>
             <h3 style="font-size: 1.1rem; color: #333;">Maçonnerie</h3>
@@ -301,9 +326,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="contact-footer">
         <h2>VOTRE PROJET COMMENCE ICI</h2>
         <p>Contactez BOG-ART pour un devis gratuit et une expertise de qualité dans le Var (83).</p>
-        
+
      <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0; box-sizing: border-box;">
-    
+
     <a href="tel:0751380200" style="width: 90%; max-width: 400px; background-color: #d4af37; color: white; padding: 18px; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; display: block; box-sizing: border-box; font-family: Arial, sans-serif;">
         APPELER MAINTENANT
     </a>
@@ -325,9 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
-</html>@@ <h2>VOTRE PROJET COMMENCE ICI</h2>
-
-
+</html>
 
 
 
